@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Note Card</title>
+    <link rel="stylesheet" href="note.css ">
+    <!-- <script src="note.js"></script> -->
+</head>
+<body>
+    <div class="first">
+        <h3>New Call</h3>
+        <div class="second">
+            <p>Full name</p>
+            <input type="text" name="full_name" placeholder="Enter Your Name"/>
+            <p id="number">Phone Number</p>
+            <input type="text" name="phone_number" id="phone_number" placeholder="Enter 10-digit number" />
+            <p>Image Url</p>
+            <input type="text" name="image_url" placeholder="Enter Image URL" />
+            <p>Purpose</p>
+            <input type="text" name="purpose" placeholder="Enter Purpose" />
+            <div class="category">
+                <p>Category</p>
+                <div>
+                    <input type="radio" id="Emergency" name="category" value="Emergency">
+                    <label for="Emergency">Emergency</label>
+                </div>
+                <div>
+                    <input type="radio" id="Follow-up" name="category" value="Follow-up">
+                    <label for="Follow-up">Follow-up</label>
+                </div>
+                <div>
+                    <input type="radio" id="Casual" name="category" value="Casual">
+                    <label for="Casual">Casual</label>
+                </div>
+                <div>
+                    <input type="radio" id="No-rush" name="category" value="No-rush">
+                    <label for="No-rush">No rush</label>
+                </div>
+            </div>
+            <div class="footer">
+                <button type="button" id="create">Create Note</button>
+                <button type="button" id="close">Close</button>
+            </div>
+        </div>
+    </div>
+    <script src="note.js"></script>
+</body>
+</html>

@@ -1,0 +1,23 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #e0d6d6;
+    margin: 0;
+    padding: 20px;
+}
+div.title {
+    height: 40px;
+    width: 40%;
+    border-radius: 50px;
+    background-color: #d2bbbb;
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    margin: 0 auto 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+div.title p {
+    margin: 0;
+}

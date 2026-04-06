@@ -7,10 +7,138 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div>
+    <div class="top-row">
         <div class="title">
             <p>LEARN WITH FUN</p>
         </div>
+        <div class="search">
+            <input type="search" placeholder="Search..." aria-label="Search">
+        </div>
     </div>
+    <div class="content">
+        <div class="language-card" data-language="C" role="button" tabindex="0">C</div>
+        <div class="language-card" data-language="C++" role="button" tabindex="0">C++</div>
+        <div class="language-card" data-language="Python" role="button" tabindex="0">Python</div>
+        <div class="language-card" data-language="Java" role="button" tabindex="0">Java</div>
+        <div class="language-card" data-language="JavaScript" role="button" tabindex="0">JavaScript</div>
+        <div class="language-card" data-language="R" role="button" tabindex="0">R</div>
+        <div class="language-card" data-language="ReactJS" role="button" tabindex="0">ReactJS</div>
+        <div class="language-card" data-language="NodeJS" role="button" tabindex="0">NodeJS</div>
+        <div class="language-card" data-language="SQL" role="button" tabindex="0">SQL</div>
+    </div>
+    <div class="language-content" id="language-content">
+        Click a language to see its content here.
+    </div>
+
+    <div id="language-templates" hidden>
+        <section class="language-panel" id="c-panel" data-language="C">
+            <h2>C Language</h2>
+            <p>- C is one of the most important programming languages.</p>
+            <p>- It is fast, simple, and close to the hardware.</p>
+            <p>- Many operating systems and compilers are written in C.</p>
+            <p>- C is a good language to learn programming basics.</p>
+            <p>- It helps you understand memory, pointers, and logic clearly.</p>
+            <p>- It is often used in embedded systems and low-level software.</p>
+            <p>- Many new languages are influenced by C.</p>
+            <p>- If you learn C well, other languages become easier.</p>
+        </section>
+
+        <section class="language-panel" id="cpp-panel" data-language="C++">
+            <h2>C++ Language</h2>
+            <p>- C++ is a powerful language built from C.</p>
+            <p>- It supports both procedural and object-oriented programming.</p>
+            <p>- It is used in games, software tools, and high-performance programs.</p>
+            <p>- C++ gives you more control over memory and speed.</p>
+            <p>- It includes classes, objects, inheritance, and polymorphism.</p>
+            <p>- It is more advanced than C, but very useful.</p>
+            <p>- Many large applications use C++ in their core.</p>
+            <p>- It is a great language for strong programming practice.</p>
+        </section>
+
+        <section class="language-panel" id="python-panel" data-language="Python">
+            <h2>Python Language</h2>
+            <p>- Python is a beginner-friendly language with simple syntax.</p>
+            <p>- It is easy to read and easy to write.</p>
+            <p>- Python is used in web development, automation, and data science.</p>
+            <p>- It has many useful libraries and tools.</p>
+            <p>- Python is popular for machine learning and AI projects.</p>
+            <p>- You can build small scripts or large applications with it.</p>
+            <p>- Indentation is very important in Python.</p>
+            <p>- It is one of the best languages for beginners.</p>
+        </section>
+
+        <section class="language-panel" id="java-panel" data-language="Java">
+            <h2>Java Language</h2>
+            <p>- Java is a widely used programming language.</p>
+            <p>- It follows the idea of write once, run anywhere.</p>
+            <p>- Java is used for desktop apps, mobile apps, and enterprise software.</p>
+            <p>- It is known for object-oriented programming.</p>
+            <p>- Java has strong memory management and security features.</p>
+            <p>- It is often used in big companies and backend systems.</p>
+            <p>- Java programs run on the Java Virtual Machine.</p>
+            <p>- It is a solid language for building real-world projects.</p>
+        </section>
+
+        <section class="language-panel" id="javascript-panel" data-language="JavaScript">
+            <h2>JavaScript Language</h2>
+            <p>- JavaScript is the language of the web.</p>
+            <p>- It makes web pages interactive and dynamic.</p>
+            <p>- You can use it for buttons, forms, animations, and menus.</p>
+            <p>- JavaScript works in browsers and on servers with NodeJS.</p>
+            <p>- It is used with HTML and CSS to build web apps.</p>
+            <p>- It supports objects, functions, and event handling.</p>
+            <p>- Almost every modern website uses JavaScript.</p>
+            <p>- It is a must-learn language for web development.</p>
+        </section>
+
+        <section class="language-panel" id="r-panel" data-language="R">
+            <h2>R Language</h2>
+            <p>- R is mostly used for data analysis and statistics.</p>
+            <p>- It is very helpful for charts, graphs, and reports.</p>
+            <p>- Researchers and analysts often use R in their work.</p>
+            <p>- It has strong tools for handling data.</p>
+            <p>- R is useful when you want to explore large datasets.</p>
+            <p>- It is popular in science, research, and analytics.</p>
+            <p>- Many packages are available for visualization.</p>
+            <p>- R is a good language for working with data clearly.</p>
+        </section>
+
+        <section class="language-panel" id="react-panel" data-language="ReactJS">
+            <h2>ReactJS</h2>
+            <p>- ReactJS is a JavaScript library for building user interfaces.</p>
+            <p>- It helps create fast and interactive web pages.</p>
+            <p>- React uses components to organize code neatly.</p>
+            <p>- Components make reuse and maintenance easier.</p>
+            <p>- React is popular for modern front-end development.</p>
+            <p>- It works well for single-page applications.</p>
+            <p>- It keeps the UI updated when data changes.</p>
+            <p>- React is one of the top tools for web development today.</p>
+        </section>
+
+        <section class="language-panel" id="node-panel" data-language="NodeJS">
+            <h2>NodeJS</h2>
+            <p>- NodeJS lets you run JavaScript outside the browser.</p>
+            <p>- It is often used for backend development.</p>
+            <p>- NodeJS is fast and good for building APIs.</p>
+            <p>- It works well for real-time applications.</p>
+            <p>- Many developers use NodeJS with Express.</p>
+            <p>- It is useful for server-side logic and database work.</p>
+            <p>- NodeJS has a large package ecosystem called npm.</p>
+            <p>- It is a strong choice for full-stack JavaScript development.</p>
+        </section>
+
+        <section class="language-panel" id="sql-panel" data-language="SQL">
+            <h2>SQL</h2>
+            <p>- SQL stands for Structured Query Language.</p>
+            <p>- It is used to manage and work with databases.</p>
+            <p>- You can use SQL to add, update, delete, and read data.</p>
+            <p>- It is important in almost every data-driven application.</p>
+            <p>- SQL helps you ask questions from a database.</p>
+            <p>- It is simple to learn and very useful in real projects.</p>
+            <p>- Many websites and apps store data with SQL databases.</p>
+            <p>- Learning SQL is a smart step for developers and analysts.</p>
+        </section>
+    </div>
+    <script src="script.js"></script>
 </body>
 </html>
